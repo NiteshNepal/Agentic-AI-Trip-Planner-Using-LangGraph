@@ -29,3 +29,9 @@ print(shutil.which("uv"))```
 ##activating the env
 ```& C:\Users\asus\Desktop\All Projects\Agentic-AI-Trip-Planner-Using-LangGraph\env\Scripts\activate.ps1```
 
+
+```streamlit run streamlit_app.py```
+
+```uvicorn main:app --host 0.0.0.0 --port 8000 ```
+
+```uvicorn main:app --host 0.0.0.0 --port 8000 --reload```
