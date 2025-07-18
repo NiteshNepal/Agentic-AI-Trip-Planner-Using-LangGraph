@@ -11,6 +11,7 @@ from langgraph.prebuilt import ToolNode, tools_condition
 
 
 class GraphBuilder():
+<<<<<<< HEAD
     def __init__(self,model_provider: str = "groq"):
         self.model_loader = ModelLoader(model_provider=model_provider)
         self.llm = self.model_loader.load_llm()
@@ -30,6 +31,15 @@ class GraphBuilder():
         self.llm_with_tools = self.llm.bind_tools(tools=self.tools)
         
         self.graph = None
+=======
+    def __init__(self):
+        self.tools= [
+            #WeatherInfoTool(),
+            #PlaceSearchTool(),
+            #CalculatorTool(),
+            #CurrencyCOnverterTool()
+        ]
+>>>>>>> 8c0c4dce9c35adfce56199b8db8779f26a60d4c9
         
         self.system_prompt = SYSTEM_PROMPT
     
